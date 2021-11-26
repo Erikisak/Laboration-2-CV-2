@@ -84,7 +84,7 @@ img {
 
 .section-name{
     font-size: var(--h1-font-size);
-    color: var(--first-color);
+    color: #43BEE5;
     margin-bottom: var(--mb-3);
     text-align: center;
 }
@@ -243,4 +243,79 @@ img {
 
 .button:hover{
     background-color: var(--first-color-dark);
+}
+
+.about{
+    background-color: #2D3032;
+}
+
+.about-container{
+    row-gap: 2rem;
+}
+
+.about-data{
+    text-align: center;
+}
+
+.about-describe{
+    margin-bottom: var(--mb-4);
+}
+
+.about-img{
+    width: 150px;
+    border-radius: .5rem;
+    margin: 0 auto;
+}
+
+.about-info{
+    margin-bottom: var(--mb-4);
+}
+
+.about-info-title{
+    font-size: var(--h3-font-size);
+    color: var(--first-color-dark);
+    margin-bottom: var(--mb-2);
+}
+
+.about-info-data{
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    margin-bottom: var(--mb-3);
+}
+
+.about-info-icon {
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-right: var(--mb-4);
+}
+.about-info2{
+    display: block;
+    font-weight: var(--font-semi-bold);
+}
+
+.about-info2-small{
+    font-size: var(--small-font-size);
+}
+
+
+
+
+
+
+.skills-container{
+    row-gap: 2rem;
+}
+
+.skills-title2{
+    font-size: var(--h3-font-size);
+    color: var(--first-color-dark);
+    margin-bottom: var(--mb-2);
+}
+.skills-data{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 var(--mb-2);
+    margin-bottom: var(--mb-4);
 }
