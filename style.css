@@ -341,7 +341,65 @@ img {
     width: 100%;
 }
 
+.education-container{
+    row-gap: 2rem;
+}
 
+.education-content{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+}
+
+.education-year, .education-type{
+    font-size: var(--h3-font-size);
+    margin-bottom: .25rem;
+}
+
+.education-uni, .education-special{
+    display: block;
+    font-size: var(--smaller-font-size);
+}
+
+.education-content{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+}
+
+.education-year, .education-uni{
+    text-align: right;
+}
+
+.education-time{
+    padding: 0 1rem;
+    justify-self: center;
+}
+
+.education-round {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+}
+
+.education-round::before{
+    content: '';
+    position: absolute;
+    transform: translate(-4px, -4px);
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--first-color);
+    border-radius: 50%;
+}
+
+.education-line{
+    display: block;
+    height: 90%;
+    width: 2px;
+    background-color: var(--first-color);
+    transform: translate(5px, -4px);
+}
 
 
 
