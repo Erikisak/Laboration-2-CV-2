@@ -319,3 +319,34 @@ img {
     margin: 0 var(--mb-2);
     margin-bottom: var(--mb-4);
 }
+
+.skills-name{
+    text-transform: uppercase;
+}
+
+.skills-bar{
+    position: absolute;
+    bottom: -.75rem;
+    height: .25rem;
+    background-color: var(--first-color);
+}
+
+.skills-html{
+    width: 50%;
+}
+.skills-js{
+    width: 50%;
+}
+.skills-ui{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
