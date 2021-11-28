@@ -451,6 +451,49 @@ img {
     color: var(--first-color-lighten);
 }
 
+.contact-container{
+    row-gap: 3rem;
+}
+
+.contact-input{
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    background-color: var(--first-color-light);
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-2);
+    border-radius: .5rem;
+}
+
+.contact ::placeholder{
+    color: var(--first-color-dark);
+    font-weight: var(--font-medium);
+}
+
+.contact-button{
+    outline: none;
+    border: none;
+    font-size: var(--normal-font-size);
+    cursor: pointer; 
+}
+
+.contact-info{
+    margin-bottom: var(--mb-3);
+}
+
+.contact-title2{
+   font-size: var(--h3-font-size);
+   color: var(var(--first-color-dark));
+   margin-bottom: var(var(--mb-1));
+}
+
+.contact-text{
+    display: block;
+    padding-left: 1rem;
+}
+
+
 
 
 
