@@ -118,12 +118,51 @@ img {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
 }
 
+.label {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    position: relative;
+    border-radius: 50px;
+    padding: 5px;
+    height: 26px;
+    width: 50px;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.ball{
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transition: transform 0.2s linear;
+}
+
+body.dark{
+    background-color: white;
+}
+
+
 .nav{
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 
 .nav-menu{
     position: fixed;
@@ -134,7 +173,7 @@ img {
     padding: 3rem;
     display: flex;
     align-items: center;
-    background-color: var(--first-color);
+    background: orange;
     transition: .5s;
 }
 .nav-close{
@@ -153,10 +192,11 @@ img {
 .nav-link{
     font-size: 1rem;
     text-transform: uppercase;
-    color: var(--first-color-lighten);
+    color: var(--text-color);
     font-weight: var(--font-semi-bold);
     transition: .3s;
 }
+
 
 .nav-link:hover{
     color: var(--text-color);
@@ -171,7 +211,7 @@ img {
     left: 0;
 }
 .active{
-    color: var(--text-color);
+    color: black;
 }
 
 .home-container{
@@ -247,6 +287,7 @@ img {
 
 .about{
     background-color: #2D3032;
+    height: calc(100vh - var(--header-height));
 }
 
 .about-container{
@@ -301,7 +342,9 @@ img {
 
 
 
-
+.skills{
+    height: calc(100vh - var(--header-height));
+}
 
 .skills-container{
     row-gap: 2rem;
@@ -344,6 +387,7 @@ img {
 
 .education{
     background: rgb(54, 54, 54);
+    height: calc(100vh - var(--header-height));
 }
 
 .education-container{
@@ -415,6 +459,7 @@ img {
     border: 2px solid var(--first-color);
     border-radius: .5rem;
     text-align: center;
+    background-color: black;
 }
 
 .jobs-icon {
@@ -460,7 +505,7 @@ img {
     padding: 1rem;
     outline: none;
     border: none;
-    background-color: var(--first-color-light);
+    background-color: black;
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-2);
     border-radius: .5rem;
@@ -493,6 +538,133 @@ img {
     padding-left: 1rem;
 }
 
+.footer{
+    background-color: black;
+    color: var(--first-color-light);
+    text-align: center;
+}
+
+.footer-title{
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-2); 
+
+}
+
+.footer-describe{
+    margin-bottom: var(--mb-2);
+}
+
+.footer-social{
+    margin-bottom: 3rem;
+}
+
+.footer-link{
+    display: inline-flex;
+    background-color: var(--first-color);
+    color: var(--first-color-lighten);
+    font-size: 1.1rem;
+    border-radius: 50%;
+    padding: .40rem;
+    margin: 0 var(--mb-1);
+    transition: .3s;
+}
+
+.footer-link:hover{
+    background-color: var(--first-color-lighten);
+    color: var(--first-color);
+}
+
+
+@media screen and (min-width: 768px) {
+    .home-button{
+        width: initial;
+    }
+
+    .nav-menu{
+        width: var(--nav-width);
+    }
+    
+    .about-container,
+    .skills-container,
+    .jobs-container,
+    .contact-input{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .about-data{
+        text-align: initial;
+    }
+
+    .about-describe{
+        margin-bottom: var(--mb-5);
+    }
+
+    .about-img{
+        width: 220px;
+    }
+
+    .about-info{
+        padding-left: 4rem;
+    }
+
+    .education-time{
+        padding: 0 2rem;
+    }
+
+    .contact-inputs{
+        display: grid;
+        column-gap: 1.5rem;
+    }
+
+    .contact-info{
+        padding-left: 3rem;
+    }
+
+    .footer{
+        background: none;
+    }
+
+    .footer-container{
+        background-color: black;
+        padding: 3rem 0;
+        border-radius: .5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+        margin: 0;
+        padding-left: var(--nav-width);
+    }
+
+    .header1{
+        width: 0;
+    }
+
+    .nav-toggle, .nav-logo, .nav-close{
+        display: none;
+    }
+
+    .nav-menu{
+        left: 0;
+    }
+
+    .home-container{
+        height: 100vh;
+    }
+    
+    .section{
+        padding: 3rem 0 2rem;
+    }
+
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .jobs-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
 
 
 
