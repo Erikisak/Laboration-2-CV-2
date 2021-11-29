@@ -5,10 +5,10 @@
     --font-semi-bold: 600;
     --first-color: #E9322E;
     --first-color-dark: #fff;
-    --first-color-darken: orange;
+    --first-color-darken: #FFFFFF;
     --text-color: #fff; 
     --first-color-light: lightblue;
-    --first-color-lighten: #19171A;
+    --first-color-lighten: #171717;
 
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -46,12 +46,13 @@ html{
 }
 
 body{
+    font-family: 'Work Sans', sans-serif;
     margin: var(--header-height) 0 0 0;
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     background-color: var(--first-color-lighten);
     color: var(--text-color);
-    line-height: 1.6;
+    line-height: 3;
 }
 
 h1,h2,h3,p{
@@ -119,12 +120,14 @@ img {
 }
 
 .label {
-    background-color: #111;
+    background-color: grey;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 50px;
-    position: relative;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
     border-radius: 50px;
     padding: 5px;
     height: 26px;
@@ -156,6 +159,8 @@ body.dark{
 }
 
 
+
+
 .nav{
     height: var(--header-height);
     display: flex;
@@ -168,12 +173,12 @@ body.dark{
     position: fixed;
     top: 0;
     left: -100%;
-    width: 90%;
+    /* width: 90%; */
     height: 100vh;
     padding: 3rem;
     display: flex;
     align-items: center;
-    background: orange;
+    background: black;
     transition: .5s;
 }
 .nav-close{
@@ -190,7 +195,7 @@ body.dark{
 }
 
 .nav-link{
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     color: var(--text-color);
     font-weight: var(--font-semi-bold);
@@ -211,7 +216,12 @@ body.dark{
     left: 0;
 }
 .active{
-    color: black;
+    color: #43BEE5;
+}
+
+.home{
+    background: url(/pexels-neo-2653362.jpg);
+    background-size: cover;
 }
 
 .home-container{
@@ -228,18 +238,20 @@ body.dark{
 }
 
 .home-img{
-    padding-top: 1.3rem;
-    padding-left: .8rem;
     width: 160px;
     height: 160px;
-    background-color: var(--first-color);
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: var(--mb-2);
 }
 
+.home{
+    background: url;
+}
+
 .home-img img{
-    width: 155px;  
+    width: 155px;
+
 }
 
 .home-title{
@@ -251,10 +263,12 @@ body.dark{
 .home-head{
     font-size: var(--small-font-size);
     color: var(--first-color-dark);
-    margin-bottom: var(--mb-5);
+    line-height: 2;
 }
 
+
 .home-media{
+    margin-top: 1rem;
     margin-bottom: 5rem;
 }
 .home-media-link{
@@ -268,7 +282,7 @@ body.dark{
     transition: .3s;
 }
 .home-media-link:hover{
-    background-color: var(--first-color-dark);
+    background-color: var(--first-color);
 }
 
 .button{
@@ -282,12 +296,11 @@ body.dark{
 }
 
 .button:hover{
-    background-color: var(--first-color-dark);
+    background-color: var(--first-color);
 }
 
 .about{
     background-color: #2D3032;
-    height: calc(100vh - var(--header-height));
 }
 
 .about-container{
@@ -323,6 +336,7 @@ body.dark{
     align-items: center;
     padding-left: 1.5rem;
     margin-bottom: var(--mb-3);
+    letter-spacing: 3px;
 }
 
 .about-info-icon {
@@ -342,9 +356,7 @@ body.dark{
 
 
 
-.skills{
-    height: calc(100vh - var(--header-height));
-}
+
 
 .skills-container{
     row-gap: 2rem;
@@ -374,15 +386,41 @@ body.dark{
     background-color: var(--first-color);
 }
 
+
 .skills-html{
     width: 50%;
+    animation: progres 4s infinite linear;
 }
 .skills-js{
     width: 50%;
+    animation: progres 4s infinite linear;
 }
 .skills-ui{
     width: 100%;
 }
+
+@keyframes progres {
+    0% {
+      left:0%;
+      right:100%;
+      width:0%;
+    }
+    10% {
+      left:0%;
+      right:75%;
+      width:25%;
+    }
+    90% {
+      right:0%;
+      left:75%;
+      width:25%;
+    }
+    100% {
+      left:100%;
+      right:0%;
+      width:0%;
+    }
+  }
 
 
 .education{
@@ -450,6 +488,8 @@ body.dark{
     transform: translate(5px, -4px);
 }
 
+
+
 .jobs-container{
     row-gap: 2rem;
 }
@@ -506,6 +546,7 @@ body.dark{
     outline: none;
     border: none;
     background-color: black;
+    color: white;
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-2);
     border-radius: .5rem;
@@ -529,13 +570,15 @@ body.dark{
 
 .contact-title2{
    font-size: var(--h3-font-size);
-   color: var(var(--first-color-dark));
-   margin-bottom: var(var(--mb-1));
+   color: var(--first-color);
+   margin-bottom: var(--mb-1);
+   letter-spacing: 3px;
 }
 
 .contact-text{
     display: block;
     padding-left: 1rem;
+    letter-spacing: 3px;
 }
 
 .footer{
