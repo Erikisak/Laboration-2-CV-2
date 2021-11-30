@@ -119,6 +119,7 @@ img {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
 }
 
+
 .label {
     background-color: grey;
     display: flex;
@@ -158,8 +159,26 @@ body.dark{
     background-color: white;
     color: black;
 }
-
-
+body.dark .home{
+    background: url(/pexels-lukas-1420709.jpg);
+    background-size: cover;
+}
+body.dark .nav-menu{
+    background-color: #43BEE5;
+    transition: none;
+}
+body.dark .about{
+    background-color: #cdcdcd;
+}
+body.dark .education{
+    background: #cdcdcd;
+}
+body.dark .home-head{
+    color: black;
+}
+body.dark .active{
+    color: black;
+}
 
 
 .nav{
@@ -219,11 +238,11 @@ body.dark{
 .active{
     color: #43BEE5;
 }
-
+ 
 .home{
     background: url(/pexels-neo-2653362.jpg);
     background-size: cover;
-}
+} 
 
 .home-container{
     height: calc(100vh - var(--header-height));
@@ -246,9 +265,6 @@ body.dark{
     margin-bottom: var(--mb-2);
 }
 
-.home{
-    background: url;
-}
 
 .home-img img{
     width: 155px;
