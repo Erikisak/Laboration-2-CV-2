@@ -121,7 +121,8 @@ img {
 
 
 .label {
-    background-color: grey;
+    background-color: darkblue;
+    color: yellow;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -158,26 +159,63 @@ img {
 body.dark{
     background-color: white;
     color: black;
+    transition: none;
 }
+
 body.dark .home{
     background: url(/pexels-lukas-1420709.jpg);
     background-size: cover;
+    transition: none;
 }
+
+body.dark .skills{
+    background-color: #cdcdcd;
+}
+
 body.dark .nav-menu{
     background-color: #43BEE5;
     transition: none;
 }
+
 body.dark .about{
+    background-color: #fff;
+}
+
+body.dark .education{
+    background: #fff;
+}
+
+body.dark .jobs{
     background-color: #cdcdcd;
 }
-body.dark .education{
-    background: #cdcdcd;
+
+body.dark .footer{
+    background-color: #cdcdcd;
 }
+
 body.dark .home-head{
     color: black;
 }
+
 body.dark .active{
     color: black;
+}
+
+body.dark .jobs-content{
+    background-color: #fff;
+}
+
+body.dark .jobs-title{
+    color: black;
+}
+
+body.dark .contact-input{
+    background-color: #cdcdcd;
+    color: black;
+}
+
+body.dark .footer-container{
+    background-color: #fff;
 }
 
 
@@ -599,8 +637,7 @@ body.dark .active{
 }
 
 .footer{
-    background-color: black;
-    color: var(--first-color-light);
+    color: #43BEE5;
     text-align: center;
 }
 
@@ -706,6 +743,7 @@ body.dark .active{
 
     .nav-menu{
         left: 0;
+        transition: none;
     }
 
     .home-container{
