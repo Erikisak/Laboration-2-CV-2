@@ -9,6 +9,10 @@ closeMenu.addEventListener('click', ()=>{
     navMenu.classList.remove('show')
 })
 
+
+
+
+
 const navLink = document.querySelectorAll('.nav-link')
 
 function linkAction(){
@@ -35,6 +39,12 @@ function scrollActive(){
         }
     })
 }
+
+
+
+
+
+
 
 const checkbox = document.getElementById('checkbox');
 
