@@ -41,7 +41,7 @@ body.dark{
 }
 
 body.dark .home{
-    background: url(../images/pexels-neo-2653362.JPG);
+    background-image: url(/images/pexels-lukas-1420709.jpg);
     background-size: cover;
     transition: none;
 }

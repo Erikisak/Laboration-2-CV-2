@@ -178,7 +178,7 @@ img {
 }
  
 .home{
-    background: url(/images/pexels-neo-2653362.jpg);
+    background-image: url(/images/pexels-neo-2653362.jpg);
     background-size: cover;
 } 
 
