@@ -41,7 +41,7 @@ body.dark{
 }
 
 body.dark .home{
-    background: url(/pexels-lukas-1420709.jpg);
+    background: url(./images/pexels-lukas-1420709.jpg);
     background-size: cover;
     transition: none;
 }
@@ -96,6 +96,6 @@ body.dark .footer-container{
     background-color: #fff;
 }
 
-body.dark .button {
-    border: 2px solid black;
+body.dark .contact-button {
+    background-color: #43BEE5;
 }
