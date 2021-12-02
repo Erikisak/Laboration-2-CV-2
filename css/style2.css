@@ -103,5 +103,5 @@ body.dark .contact-button {
 }
 
 body.dark .home-button{
-    background-color: #43BEE5;
+    background-color: var(--first-color);
 }
