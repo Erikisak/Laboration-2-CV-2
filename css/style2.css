@@ -102,6 +102,7 @@ body.dark .contact-button {
     background-color: #43BEE5;
 }
 
-body.dark .home-button{
-    background-color: var(--first-color);
+
+body.dark .skills-title2{
+    color: black;
 }
