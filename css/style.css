@@ -177,10 +177,10 @@ img {
     color: #43BEE5;
 }
  
-.home{
-    background-image: url(../images/pexels-neo-2653362.jpg);
+/* .home{
+    background-image: url(/images/pexels-neo-2653362.jpg);
     background-size: cover;
-} 
+}  */
 
 .home-container{
     height: calc(100vh - var(--header-height));
